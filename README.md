@@ -1,4 +1,8 @@
-# ONE ORACLE NEXT EDUCATION
+# ONE ORACLE NEXT EDUCATION 
 
-# Logica de progrmacion : primeros pasos y Conceptos primordiales
-<a>Visualiza mi proceso de aprendizaje en logica de Programacion</a>
+# Logica de programacion : primeros pasos y Conceptos primordiales
+Visualiza mi proceso de aprendizaje en:
+<br>
+Alura y Oracle
+<br>
+<a>Google Data Analytics</a>
