@@ -1,0 +1,41 @@
+def calculate_storage(filesize):
+    block_size = 4096
+ # Use floor division to calculate how many blocks are fully occupied
+    full_blocks = filesize//4096
+    # Use the modulo operator to check whether there's any remainder
+    partial_block_remainder = filesize%4096
+    # Depending on whether there's a remainder or not, return
+    # the total number of bytes required to allocate enough blocks
+    # to store your data.
+    if partial_block_remainder > 0:
+        return 4096 * (full_blocks+1)
+    return full_blocks*4096
+
+print(calculate_storage(1))    # Should be 4096
+print(calculate_storage(4096)) # Should be 4096
+print(calculate_storage(4097)) # Should be 8192
+print(calculate_storage(9000)) # Should be 8192
+
+x = 0
+while x < 5:
+  print("Not there yet, x=" + str(x))
+  x = x + 1
+print("x=" + str(x))
+
+
+#The retry function tries to execute an operation that might fail, it retries the operation for a number of attempts.  Currently the code will keep executing the function even if it succeeds. 
+                                #Fill in the blank so the code stops trying after the operation succeeded.
+def retry(operation, attempts): 
+  for n in range(attempts):
+    if operation():
+      print("Attempt " + str(n) + " succeeded")
+    if n == 1:
+        break
+    else:
+      print("Attempt " + str(n) + " failed")
+
+# retry(create_user,3)
+# retry(stop_service,5)
+
+
+

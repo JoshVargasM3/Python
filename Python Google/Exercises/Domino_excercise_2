@@ -1,0 +1,26 @@
+def sum_squares(x):     # Aqui defines la funcion 
+    sum = 0             # Este es el nombre de la varible, NO ES LA FUNCION SUMA
+    for n in range(x):  #Usar la el loop 'for' en el 'range' syntax de range= range(start, stop, step) 
+        sum += n*n      # Aqui indicas que la variable se sume por la cantidad de numeros en el loop de X
+    return sum
+
+print(sum_squares(10)) # Should be 285
+
+for left in range(7):
+  for right in range(left, 7):
+    print ("[" + str (left) + "|" + str (right) + "]", end = " ")
+  print()
+
+
+teams = ['Panda', 'Dragon', 'Scorpion', 'Tiger', 'Puma']
+for home_team in teams:
+  for away_team in teams:
+    if home_team != away_team:
+      print ( home_team + " vs " + away_team,)
+
+teams = ("Hola")
+for home_team in teams:
+  for away_team in teams:
+    if home_team != away_team:
+      print ( home_team + " vs " + away_team,)
+

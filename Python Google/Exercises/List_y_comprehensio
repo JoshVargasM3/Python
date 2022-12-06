@@ -1,0 +1,87 @@
+# Funcion para obtener la palabra de cualquier lista ingresada.
+def get_word(sentence, n):
+	# Only proceed if n is positive 
+	if n > 0:
+		words = sentence.split() #usas funcion split para partir la string en elemetos de una lista
+		# Only proceed if n is not more than the number of words 
+		if n <= len(words):
+			return(words[n-1]) # se resta -1 al valolr de n para que arroje el valor real ya que python toma 0 como primer valor.
+	return("")
+
+print(get_word("This is a lesson about lists", 4)) # Should print: lesson
+print(get_word("This is a lesson about lists", -4)) # Nothing
+print(get_word("Now we are cooking!", 1)) # Should print: Now
+print(get_word("Now we are cooking!", 5)) # Nothing
+
+""""////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////"""
+
+# The skip_elements function returns a list containing every other element from an input list, 
+# starting with the first element. 
+# Complete this function to do that, using the for loop to iterate through the input list.
+def skip_elements(elements):
+	# Initialize variables
+	new_list = []
+	i = 0
+
+	# Iterate through the list
+	for element in elements:
+		# Does this element belong in the resulting list?
+		if i % 2 == 0:
+			# Add this element to the resulting list
+			new_list.append(element)
+		# Increment i
+		i += 1
+
+	return new_list
+
+print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
+print(skip_elements([])) # Should be []
+
+# Using the tupple list:
+# Es mucho mas facl resolverlo porque metes as condiciones del elemento
+# en el tupple que es una lista inmutable pero que contiene multiples valores
+def skip_elements(elements):
+	# code goes here
+	element = [x for i, x in enumerate(elements) if i % 2 == 0]
+	return element
+
+print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
+
+""""////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////"""
+
+# Example of a TUPPLE
+
+def file_size(file_info):
+	(name, type, size)= file_info
+	return("{:.2f}".format(size / 1024))
+
+print(file_size(('Class Assignment', 'docx', 17875))) # Should print 17.46
+print(file_size(('Notes', 'txt', 496))) # Should print 0.48
+print(file_size(('Program', 'py', 1239))) # Should print 1.21
+
+""""////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////"""
+
+# Iterating over Lists and Tuples
+winners= ["Sofia", "Dylan", "Karla", "Josh"]
+for index, person in enumerate(winners):
+    print("{} - {}".format(index + 1, person))
+
+""""////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////"""
+#The odd_numbers function returns a list of odd numbers between 1 and n, inclusively. Fill in the blanks in the function, using list comprehension. 
+# Hint: remember that list and range counters start at 0 and end at the limit minus 1.
+# ESTO ES LIST_COMPREHENSION optimizas codigo en una sola LINEA!
+def odd_numbers(n):
+	number = [x for x in range(0,n+1) if x%2 != 0]
+	return number
+
+print(odd_numbers(5))  # Should print [1, 3, 5]
+print(odd_numbers(10)) # Should print [1, 3, 5, 7, 9]
+print(odd_numbers(11)) # Should print [1, 3, 5, 7, 9, 11]
+print(odd_numbers(1))  # Should print [1]
+print(odd_numbers(-1)) # Should print []
