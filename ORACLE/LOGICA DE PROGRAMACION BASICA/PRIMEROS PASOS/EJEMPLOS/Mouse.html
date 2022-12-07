@@ -1,0 +1,58 @@
+<canvas width="800" height="600"></canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    
+    pincel.fillStyle ="darkgray"
+    pincel.fillRect(0,0,800,600);
+    
+    function dibujarCirculo(x, y, radio, color) {
+
+        pincel.fillStyle = color;
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2*3.14);
+        pincel.fill();
+
+        }
+
+
+    function dibujarflor(evento){
+        
+        var x = evento.pageX -pantalla.offsetLeft;
+        var y = evento.pageY - pantalla.offsetTop;
+    
+        dibujarCirculo(x,y, 30, "red");
+        dibujarCirculo(x,y-60, 30, "yellow");
+        dibujarCirculo(x,y+60, 30, "blue");
+        dibujarCirculo(x-60,y, 30, "orange");
+        dibujarCirculo(x+60,y, 30, "black");
+        console.log(x+ "," + y);
+
+        }
+        function cabezacreeper(evento){
+        //cabeza
+        var x = evento.pageX -pantalla.offsetLeft;
+        var y = evento.pageY - pantalla.offsetTop;
+        
+        pincel.fillStyle ="darkgreen"
+        pincel.fillRect(x,y,350,300);
+        // ojos
+        pincel.fillStyle ="black"
+        pincel.fillRect(x+50,y+60,90,90);
+        pincel.fillRect(x+210,y+60,90,90);
+        //nariz
+        pincel.fillStyle ="black"
+        pincel.fillRect(x+140,y+150,70,100);
+        // boca
+        pincel.fillStyle ="black"
+        pincel.fillRect(x+100,y+190,40,110);
+        pincel.fillRect(x+210,y+190,40,110);
+
+    }
+
+    
+        pantalla.onclick = cabezacreeper;
+
+
+</script>
