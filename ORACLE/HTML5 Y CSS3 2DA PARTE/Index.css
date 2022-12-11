@@ -19,7 +19,6 @@ nav li{
     display: inline;
     margin: 0 0 0 15px;
 }
-
 nav a{
     text-transform: uppercase;
     color:black;
@@ -33,17 +32,13 @@ nav a:hover{
     text-decoration: underline;
     font-size: 25px;
 }
-
-.tituloPrincipal{
-
-        padding-left: 30px;
-
-
-}
 .tituloCentralizado{
     text-align: center;
-
+    font-size: 25px;
+    padding: 25px;
+    margin: 30px;
 }
+
 #banner{
     width: 100%;
 
@@ -51,7 +46,7 @@ nav a:hover{
 
 .principal{
     background: #cccccc;
-    padding: 20px;
+    padding: 30px;
 }
 
 p{
@@ -63,25 +58,50 @@ em strong{
 }
 
 #mision{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .diferenciales{
         background: #ffffff;
-        padding: 30px;
+        padding: 10px;
 }
 
 .items{
     font-style: italic;
 }
 
-ul{
+main{
+    text-align: center;
+    padding: 20px 0;
+
+
+}
+ul li.items{
     display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    text-align: center;
+    width: 30%;
+    font-size: 30px;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    font-size: 20px;
+    
 }
 
 .imagenDiferenciales{
     width: 50%;
+
+    ;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyrigth{
+    color: #FFFFFF;
+    font-size: 15px;
+    margin: 20px;
 }
