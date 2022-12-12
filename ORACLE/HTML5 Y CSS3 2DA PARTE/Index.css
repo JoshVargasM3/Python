@@ -32,11 +32,17 @@ nav a:hover{
     text-decoration: underline;
     font-size: 25px;
 }
+
+.ImagenBanner{
+    padding: 20px;
+    margin: 20px;
+
+}
 .tituloCentralizado{
     text-align: center;
-    font-size: 25px;
-    padding: 25px;
-    margin: 30px;
+    font-size: 40px;
+    padding: 20px;
+    margin: 15px;
 }
 
 #banner{
@@ -51,6 +57,9 @@ nav a:hover{
 
 p{
     text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
 }
 
 em strong{
@@ -64,6 +73,9 @@ em strong{
 .diferenciales{
         background: #ffffff;
         padding: 10px;
+        width: 700px; 
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .items{
@@ -77,21 +89,23 @@ main{
 
 }
 ul li.items{
-    display: inline-block;
-    text-align: center;
-    width: 30%;
+    display: inline-flexbox;
     font-size: 30px;
-    margin: 0 1.5%;
-    box-sizing: border-box;
-    border: 2px solid #000;
-    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
     
 }
 
-.imagenDiferenciales{
-    width: 50%;
+.imagendiferenciales{
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; 
+}
 
-    ;
+.imagenDiferenciales{
+    width: 100%;
+
 }
 
 footer{
