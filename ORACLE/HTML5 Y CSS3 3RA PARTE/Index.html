@@ -9,11 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="Index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div class="caja">
-                <h1><img src="imagenes/logo.png" alt=""></h1>
+            <section class="caja">
+                <h1><img  src="imagenes/logo.png" alt=""></h1>
                 <nav>
                     <ul>
                         <li><a href="Index.html">Home</a></li>
@@ -21,23 +22,37 @@
                         <li><a href="Contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
-            </div>
+            </section>
         </header>
         <main>
-        <div class="principal">
-            <h2 class="tituloCentralizado">La Barbería Alura</h2>
+
+        <section class="ImagenBanner">
+            <img id="banner" src="Imagenes/banner.jpg">
+            
+        </section>
+
+        <section class="principal">
+            <h2 class="tituloCentralizado">Sobre la Barbería Alura</h2>
+
+            <img class="utensilios" src="imagenes/utensilios.jpg" alt="utensilios barberos">
             <p >Ubicada en el corazón de la ciudad, la <strong>Barbería Alura </strong> para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
 
             <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
 
             <p>Profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
-        </div>
+        </section>
 
-        <div class="ImagenBanner">
-            <img id="banner" src="Imagenes/banner.jpg">
-        </div>
+        <section class="mapa">
 
-        <div class="diferenciales">
+                <h3 class="titulo-principal">Nuestra Ubicacion</h3>
+                <p> Nuestro establecimiento se encuentra en el corazón de la ciudad.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14939.706324373316!2d-100.39878546067831!3d20.591055669414693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1670970778469!5m2!1ses-419!2smx" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+
+
+        <section class="diferenciales">
 
             <h3 class="tituloCentralizado" >Diferenciales</h3>
 
@@ -46,14 +61,29 @@
                 <li class="items">Espacio diferenciado</li>
                 <li class="items">Localizacion</li>
                 <li class="items">Profesionales calificados</li>
+                <li class="items">Puntualidad</li>
+                <li class="items">Limpieza</li>
             </ul>
-        </div>
+        
+            <section class="imagendiferenciales">
 
-        <div class="imagendiferenciales">
+                <img src="Imagenes/diferenciales.jpg" class="imagenDiferenciales">
+                
 
-            <img src="Imagenes/diferenciales.jpg" class="imagenDiferenciales">
+            </section>
+            
 
-        </div>
+        </section>
+
+            <section class="video">
+                <div>
+                    <iframe width="700" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+            </section>
+
+
+        
         </main>
         <footer>
             <img src="imagenes/logo-blanco.png">

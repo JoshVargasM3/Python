@@ -1,6 +1,10 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 header{
     background-color:#BBBBBB ;
-    padding: 20px 0;
+
 }
 
 .caja{
@@ -34,8 +38,7 @@ nav a:hover{
 }
 
 .ImagenBanner{
-    padding: 20px;
-    margin: 20px;
+    width: 100%;
 
 }
 .tituloCentralizado{
@@ -43,6 +46,7 @@ nav a:hover{
     font-size: 40px;
     padding: 20px;
     margin: 15px;
+    clear: right;
 }
 
 #banner{
@@ -51,10 +55,26 @@ nav a:hover{
 }
 
 .principal{
-    background: #cccccc;
+    background: linear-gradient(#BBBBBB, #ffffff);
     padding: 30px;
+
 }
 
+.utensilios{
+    width: 200px;
+    float:right;
+    margin: 20px;
+}
+
+.mapa{
+    padding: 0 2em;
+
+    
+}
+
+.mapa p{
+    margin: 2em 0 2em;
+}
 p{
     text-align: center;
     font-size: 20px;
@@ -62,6 +82,10 @@ p{
     margin: 10px;
 }
 
+.titulo-principal{
+
+    font-size: 40px;
+}
 em strong{
     color: red;
 }
@@ -71,20 +95,22 @@ em strong{
 }
 
 .diferenciales{
-        background: #ffffff;
-        padding: 10px;
-        width: 700px; 
-        margin-left: auto;
-        margin-right: auto;
+        background: linear-gradient(#ffffff, #BBBBBB );
+        width: 100%; 
+        margin: 0 auto;
+
 }
 
 .items{
     font-style: italic;
 }
 
+.items:nth-child(2n){
+    font-weight: bold;
+}
+
 main{
     text-align: center;
-    padding: 20px 0;
 
 
 }
@@ -98,14 +124,19 @@ ul li.items{
 
 .imagendiferenciales{
     width: 700px; 
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px; 
+    padding: 20px;
+    margin: 0 auto; 
 }
 
 .imagenDiferenciales{
     width: 100%;
 
+}
+
+.video {
+    margin: 0 auto;
+    padding: 20px;
+    background:#BBBBBB;
 }
 
 footer{
@@ -118,4 +149,19 @@ footer{
     color: #FFFFFF;
     font-size: 15px;
     margin: 20px;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
 }
