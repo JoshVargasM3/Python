@@ -19,4 +19,4 @@
 >Aspiring to be a great software developer.
 <p align="center" dir="auto"><img src="https://github.com/JoshVargasM3/PORTAFOLIO/blob/Main/GifImages/Mastermind.gif" width="100%"></p>
 
-<p align="center" dir="auto">Made by José Luis Vargas with ❤️</p>
+<p align="center" dir="auto">Made by José Luis Vargas Rios with ❤️</p>
